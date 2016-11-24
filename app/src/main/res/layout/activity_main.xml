@@ -13,5 +13,62 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Sensor readings"
+        android:id="@+id/sensorTextViewLabel"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Y Axis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewX"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:id="@+id/textViewLabelY" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewLabelY"
+        android:layout_marginTop="21dp"
+        android:id="@+id/textViewY"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Z Axis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewY"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:id="@+id/textViewLabelZ" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:id="@+id/textViewX"
+        android:layout_below="@+id/textViewLabelX"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="X Axis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:id="@+id/textViewLabelX"
+        android:layout_below="@+id/sensorTextViewLabel"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewLabelZ"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:id="@+id/textViewZ" />
+
 </RelativeLayout>
