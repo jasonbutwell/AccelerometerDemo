@@ -30,6 +30,16 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         sm.registerListener(this,mySensor,SensorManager.SENSOR_DELAY_NORMAL);
     }
 
+    protected void onResume() {
+        super.onResume();
+        sm.registerListener(this, mySensor, SensorManager.SENSOR_DELAY_NORMAL);
+    }
+
+    protected void onPause() {
+        super.onPause();
+        sm.unregisterListener(this);
+    }
+
     @Override
     public void onSensorChanged(SensorEvent sensorEvent) {
         x.setText(String.valueOf(sensorEvent.values[0]));
